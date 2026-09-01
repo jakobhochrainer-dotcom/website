@@ -343,12 +343,14 @@ form.contact-form textarea { min-height: 130px; resize: vertical; }
   padding: 5px 14px;
   border-radius: 999px;
 }
+.tier-badge.patron { background: var(--green-dark); color: var(--white); }
 .tier-badge.gold { background: linear-gradient(135deg, #b4881f, #e8c766); color: #3a2c05; }
 .tier-badge.silver { background: linear-gradient(135deg, #8f96a1, #dde1e4); color: #262a2f; }
 .tier-badge.bronze { background: linear-gradient(135deg, #8a5a34, #c48a5c); color: #fbf6f0; }
 .tier-note { color: var(--ink-soft); font-size: 0.88rem; margin: 0; }
 
 .tier-grid { display: grid; gap: 20px; }
+.tier-grid.patron { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 .tier-grid.gold { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
 .tier-grid.silver { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
 .tier-grid.bronze { grid-template-columns: repeat(auto-fit, minmax(155px, 1fr)); }
@@ -366,6 +368,7 @@ form.contact-form textarea { min-height: 130px; resize: vertical; }
   font-size: 0.82rem;
   padding: 20px;
 }
+.tier-grid.patron .sponsor-slot { --tier-color: var(--green-light); min-height: 132px; }
 .tier-grid.gold .sponsor-slot { --tier-color: #c49a2e; min-height: 150px; font-size: 0.9rem; font-weight: 600; }
 .tier-grid.silver .sponsor-slot { --tier-color: #9aa1a8; min-height: 118px; }
 .tier-grid.bronze .sponsor-slot { --tier-color: #a06b3f; min-height: 92px; font-size: 0.78rem; }
@@ -375,9 +378,11 @@ form.contact-form textarea { min-height: 130px; resize: vertical; }
   max-height: 100%;
   object-fit: contain;
 }
+.tier-grid.patron .sponsor-slot img { max-height: 84px; }
 .tier-grid.gold .sponsor-slot img { max-height: 96px; }
 .tier-grid.silver .sponsor-slot img { max-height: 72px; }
 .tier-grid.bronze .sponsor-slot img { max-height: 52px; }
+.sponsor-slot.sponsor-slot--lg img { max-height: 138px; }
 
 /* ---------- Gallery ---------- */
 .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
