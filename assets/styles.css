@@ -430,6 +430,7 @@ form.contact-form textarea { min-height: 130px; resize: vertical; }
 .tier-grid.bronze .sponsor-slot img { max-height: 52px; }
 .tier-grid.gold .sponsor-slot.sponsor-slot--lg img { max-height: 172px; }
 .tier-grid.patron .sponsor-slot.sponsor-slot--lg img { max-height: 132px; }
+.tier-grid.silver .sponsor-slot.sponsor-slot--lg img { max-height: 116px; }
 
 /* ---------- Gallery ---------- */
 .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
