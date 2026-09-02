@@ -389,16 +389,14 @@ form.contact-form textarea { min-height: 130px; resize: vertical; }
 .tier-badge.bronze { background: linear-gradient(135deg, #8a5a34, #c48a5c); color: #fbf6f0; }
 .tier-note { color: var(--ink-soft); font-size: 0.88rem; margin: 0; }
 
-/* Each tier gets a fixed tile width (grid column) and height, so every
-   logo within a tier sits in an identically-sized tile regardless of its
-   own aspect ratio (object-fit: contain scales it to fill that tile) —
-   and the tile size itself steps down from tier to tier, making the
-   Gold > Silber > Bronze hierarchy visible at a glance. */
-.tier-grid { display: grid; gap: 20px; }
-.tier-grid.patron { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
-.tier-grid.gold { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
-.tier-grid.silver { grid-template-columns: repeat(auto-fit, minmax(195px, 1fr)); }
-.tier-grid.bronze { grid-template-columns: repeat(auto-fit, minmax(165px, 1fr)); }
+/* Each tier gets a fixed tile size, so every logo within a tier sits in an
+   identically-sized tile regardless of its own aspect ratio (object-fit:
+   contain scales it to fill that tile). Flex + wrap + center (rather than
+   grid) means a leftover last-row tile is centered instead of stranded on
+   the left. Patron ("Gefördert von") is sized the same as Gold — it's
+   official/civic support, not a lesser tier. Silber and Bronze step down
+   from there so the hierarchy stays visible at a glance. */
+.tier-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
 
 .sponsor-slot {
   background: var(--paper);
@@ -414,15 +412,16 @@ form.contact-form textarea { min-height: 130px; resize: vertical; }
   padding: 18px;
   box-shadow: 0 1px 2px rgba(23,26,20,0.04);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  flex: 0 0 auto;
 }
 .sponsor-slot:hover {
   transform: translateY(-3px);
   box-shadow: 0 16px 28px -18px rgba(23,26,20,0.3);
 }
-.tier-grid.patron .sponsor-slot { --tier-color: var(--green-light); height: 150px; }
-.tier-grid.gold .sponsor-slot { --tier-color: #c49a2e; height: 172px; font-size: 0.9rem; font-weight: 600; }
-.tier-grid.silver .sponsor-slot { --tier-color: #9aa1a8; height: 132px; }
-.tier-grid.bronze .sponsor-slot { --tier-color: #a06b3f; height: 102px; font-size: 0.78rem; }
+.tier-grid.patron .sponsor-slot { --tier-color: var(--green-light); width: min(260px, 100%); height: 172px; }
+.tier-grid.gold .sponsor-slot { --tier-color: #c49a2e; width: min(260px, 100%); height: 172px; font-size: 0.9rem; font-weight: 600; }
+.tier-grid.silver .sponsor-slot { --tier-color: #9aa1a8; width: min(195px, 100%); height: 132px; }
+.tier-grid.bronze .sponsor-slot { --tier-color: #a06b3f; width: min(165px, 100%); height: 102px; font-size: 0.78rem; }
 
 .sponsor-slot img {
   max-width: 100%;
