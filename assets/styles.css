@@ -418,10 +418,10 @@ form.contact-form textarea { min-height: 130px; resize: vertical; }
   transform: translateY(-3px);
   box-shadow: 0 16px 28px -18px rgba(23,26,20,0.3);
 }
-.tier-grid.patron .sponsor-slot { --tier-color: var(--green-light); width: min(260px, 100%); height: 172px; }
-.tier-grid.gold .sponsor-slot { --tier-color: #c49a2e; width: min(260px, 100%); height: 172px; font-size: 0.9rem; font-weight: 600; }
-.tier-grid.silver .sponsor-slot { --tier-color: #9aa1a8; width: min(195px, 100%); height: 132px; }
-.tier-grid.bronze .sponsor-slot { --tier-color: #a06b3f; width: min(165px, 100%); height: 102px; font-size: 0.78rem; }
+.tier-grid.patron .sponsor-slot { --tier-color: var(--green-light); width: min(240px, 100%); height: 172px; }
+.tier-grid.gold .sponsor-slot { --tier-color: #c49a2e; width: min(240px, 100%); height: 172px; font-size: 0.9rem; font-weight: 600; }
+.tier-grid.silver .sponsor-slot { --tier-color: #9aa1a8; width: min(222px, 100%); height: 132px; }
+.tier-grid.bronze .sponsor-slot { --tier-color: #a06b3f; width: min(204px, 100%); height: 102px; font-size: 0.78rem; }
 
 .sponsor-slot img {
   max-width: 100%;
