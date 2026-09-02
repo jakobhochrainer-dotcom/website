@@ -298,6 +298,8 @@ section.soft { background: var(--bg-soft); }
   border-color: rgba(137,187,62,0.4);
 }
 .card h3 { margin-bottom: 0.5em; }
+.card p a { font-weight: 700; font-size: 1.05rem; text-decoration: none; }
+.card p a:hover { text-decoration: underline; }
 
 /* ---------- Quick links (home teasers) ---------- */
 .teaser-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px; }
@@ -371,28 +373,7 @@ form.contact-form input, form.contact-form textarea {
 form.contact-form label { font-size: 0.85rem; font-weight: 600; color: var(--green-dark); }
 form.contact-form textarea { min-height: 130px; resize: vertical; }
 
-.contact-phones { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 24px 0 4px; }
-.contact-phone {
-  display: block;
-  background: var(--paper);
-  border: 1px solid var(--line);
-  border-top: 3px solid var(--green-light);
-  border-radius: var(--radius);
-  padding: 14px 16px;
-  text-decoration: none;
-  box-shadow: 0 1px 2px rgba(23,26,20,0.04);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-}
-.contact-phone:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 16px 28px -18px rgba(23,26,20,0.28);
-  border-color: rgba(137,187,62,0.4);
-}
-.contact-phone .k { display: block; font-size: 0.7rem; font-weight: 700; color: var(--green-mid); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px; }
-.contact-phone .num { display: block; font-weight: 600; color: var(--ink); font-size: 0.95rem; }
-
 .contact-map {
-  margin-top: 52px;
   border-radius: var(--radius);
   overflow: hidden;
   border: 1px solid var(--line);
@@ -528,6 +509,16 @@ form.contact-form textarea { min-height: 130px; resize: vertical; }
   .lightbox { padding: 16px; }
   .lightbox-prev { left: 8px; }
   .lightbox-next { right: 8px; }
+}
+
+/* ---------- Legal note (small print, e.g. public-funding transparency) ---------- */
+.legal-note {
+  margin-top: 48px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  max-width: none;
 }
 
 /* ---------- Breadcrumb / page hero ---------- */
