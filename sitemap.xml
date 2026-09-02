@@ -7,6 +7,11 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://reitclubwiesen.it/it/la-struttura/" />
   </url>
   <url>
+    <loc>https://reitclubwiesen.it/impressum/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://reitclubwiesen.it/impressum/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://reitclubwiesen.it/it/note-legali/" />
+  </url>
+  <url>
     <loc>https://reitclubwiesen.it/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://reitclubwiesen.it/" />
     <xhtml:link rel="alternate" hreflang="it" href="https://reitclubwiesen.it/it/" />
@@ -25,6 +30,11 @@
     <loc>https://reitclubwiesen.it/it/la-struttura/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://reitclubwiesen.it/die-anlage/" />
     <xhtml:link rel="alternate" hreflang="it" href="https://reitclubwiesen.it/it/la-struttura/" />
+  </url>
+  <url>
+    <loc>https://reitclubwiesen.it/it/note-legali/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://reitclubwiesen.it/impressum/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://reitclubwiesen.it/it/note-legali/" />
   </url>
   <url>
     <loc>https://reitclubwiesen.it/it/offerta/</loc>
