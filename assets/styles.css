@@ -393,7 +393,7 @@ form.contact-form textarea { min-height: 130px; resize: vertical; }
 .tier-grid.patron { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 .tier-grid.gold { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
 .tier-grid.silver { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
-.tier-grid.bronze { grid-template-columns: repeat(auto-fit, minmax(155px, 1fr)); }
+.tier-grid.bronze { grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); }
 
 .sponsor-slot {
   background: var(--paper);
@@ -417,7 +417,7 @@ form.contact-form textarea { min-height: 130px; resize: vertical; }
 .tier-grid.patron .sponsor-slot { --tier-color: var(--green-light); min-height: 132px; }
 .tier-grid.gold .sponsor-slot { --tier-color: #c49a2e; min-height: 150px; font-size: 0.9rem; font-weight: 600; }
 .tier-grid.silver .sponsor-slot { --tier-color: #9aa1a8; min-height: 118px; }
-.tier-grid.bronze .sponsor-slot { --tier-color: #a06b3f; min-height: 92px; font-size: 0.78rem; }
+.tier-grid.bronze .sponsor-slot { --tier-color: #a06b3f; min-height: 108px; font-size: 0.78rem; }
 
 .sponsor-slot img {
   max-width: 100%;
@@ -427,7 +427,7 @@ form.contact-form textarea { min-height: 130px; resize: vertical; }
 .tier-grid.patron .sponsor-slot img { max-height: 84px; }
 .tier-grid.gold .sponsor-slot img { max-height: 96px; }
 .tier-grid.silver .sponsor-slot img { max-height: 72px; }
-.tier-grid.bronze .sponsor-slot img { max-height: 52px; }
+.tier-grid.bronze .sponsor-slot img { max-height: 68px; }
 .tier-grid.gold .sponsor-slot.sponsor-slot--lg img { max-height: 172px; }
 .tier-grid.patron .sponsor-slot.sponsor-slot--lg img { max-height: 132px; }
 .tier-grid.silver .sponsor-slot.sponsor-slot--lg img { max-height: 116px; }
