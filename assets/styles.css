@@ -280,6 +280,9 @@ section.soft { background: var(--bg-soft); }
 }
 .img-slot.square { aspect-ratio: 1 / 1; }
 .img-slot.wide { aspect-ratio: 16 / 9; }
+.img-slot.filled { padding: 0; border-style: solid; background: none; overflow: hidden; }
+.img-slot.filled::before { display: none; }
+.img-slot.filled img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
 /* ---------- Cards ---------- */
 .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
@@ -539,8 +542,6 @@ footer.site a { color: rgba(255,255,255,0.78); text-decoration: none; }
 footer.site a:hover { color: var(--green-light); }
 footer.site ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,0.14); padding-top: 20px; font-size: 0.82rem; color: rgba(255,255,255,0.5); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
-.footer-bottom a.ghost-link { color: inherit; }
-.footer-bottom a.ghost-link:hover { color: rgba(255,255,255,0.78); }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
