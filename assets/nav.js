@@ -8,9 +8,10 @@ document.addEventListener('DOMContentLoaded', function () {
       toggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
     });
   }
-  document.querySelectorAll('.has-sub > span').forEach(function (label) {
-    label.addEventListener('click', function () {
+  document.querySelectorAll('.has-sub > a').forEach(function (label) {
+    label.addEventListener('click', function (e) {
       if (window.innerWidth > 860) return;
+      e.preventDefault();
       label.parentElement.classList.toggle('open');
     });
   });

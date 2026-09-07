@@ -147,7 +147,7 @@ header.site {
 }
 .nav-group { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
 nav.primary { display: flex; align-items: center; gap: 2px; flex-wrap: wrap; }
-nav.primary a, .has-sub > span {
+nav.primary a {
   color: rgba(255, 255, 255, 0.82);
   text-decoration: none;
   font-size: 0.92rem;
@@ -539,9 +539,12 @@ footer.site a { color: rgba(255,255,255,0.78); text-decoration: none; }
 footer.site a:hover { color: var(--green-light); }
 footer.site ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,0.14); padding-top: 20px; font-size: 0.82rem; color: rgba(255,255,255,0.5); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+.footer-bottom a.ghost-link { color: inherit; }
+.footer-bottom a.ghost-link:hover { color: rgba(255,255,255,0.78); }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
+  .nav-inner { flex-wrap: wrap; }
   .brand img { height: 56px; }
   .nav-toggle {
     display: inline-flex;
