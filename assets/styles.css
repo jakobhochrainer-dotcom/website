@@ -358,6 +358,29 @@ section.soft { background: var(--bg-soft); }
 }
 .timeline .stop .dim-tag { margin-bottom: 8px; }
 
+/* ---------- Roadmap (horizontal Turnier stepper) ---------- */
+.roadmap { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 40px; }
+.roadmap .stage { position: relative; padding-top: 30px; }
+.roadmap .stage::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 14px; height: 14px;
+  background: var(--green-light);
+  border: 2px solid var(--green-dark);
+  border-radius: 50%;
+  z-index: 1;
+}
+.roadmap .stage::after {
+  content: "";
+  position: absolute;
+  top: 6px; left: 7px; right: -32px;
+  height: 2px;
+  background: var(--green-mid);
+}
+.roadmap .stage:last-child::after { display: none; }
+.roadmap .stage .dim-tag { margin-bottom: 10px; }
+
 /* ---------- Stat tiles ---------- */
 .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin: 40px 0; }
 .stat-tile { background: var(--bg-soft); border-radius: var(--radius); padding: 26px 22px; }
@@ -580,6 +603,8 @@ footer.site ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8p
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
   .nav-inner { flex-wrap: wrap; }
+  .roadmap { grid-template-columns: 1fr; gap: 28px; }
+  .roadmap .stage::after { display: none; }
   .brand img { height: 56px; }
   .nav-toggle {
     display: inline-flex;
