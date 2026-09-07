@@ -358,6 +358,23 @@ section.soft { background: var(--bg-soft); }
 }
 .timeline .stop .dim-tag { margin-bottom: 8px; }
 
+/* ---------- Stat tiles ---------- */
+.stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin: 40px 0; }
+.stat-tile { background: var(--bg-soft); border-radius: var(--radius); padding: 26px 22px; }
+.stat-tile .stat-num { display: block; font-size: 2.6rem; font-weight: 800; color: var(--green-dark); line-height: 1; margin-bottom: 10px; letter-spacing: -0.02em; }
+.stat-tile .stat-label { display: block; font-size: 0.85rem; color: var(--ink-soft); }
+
+/* ---------- Pull quote ---------- */
+.pull-quote {
+  border-left: 4px solid var(--green-light);
+  background: var(--bg-soft);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  margin: 40px 0;
+}
+.pull-quote p { font-size: 1.15rem; font-style: italic; color: var(--green-dark); margin: 0 0 10px; max-width: none; }
+.pull-quote cite { display: block; font-size: 0.85rem; font-style: normal; color: var(--ink-soft); }
+
 /* ---------- Contact ---------- */
 .contact-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 48px; }
 .contact-list { list-style: none; margin: 0; padding: 0; }
