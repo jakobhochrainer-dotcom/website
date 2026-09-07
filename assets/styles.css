@@ -248,6 +248,7 @@ section.soft { background: var(--bg-soft); }
 }
 .feature:first-of-type { border-top: none; }
 .feature.reverse .img-slot { order: 2; }
+.feature.no-image { grid-template-columns: 1fr; max-width: 62ch; }
 
 .img-slot {
   position: relative;
