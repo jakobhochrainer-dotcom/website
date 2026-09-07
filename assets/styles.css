@@ -543,6 +543,22 @@ footer.site a:hover { color: var(--green-light); }
 footer.site ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,0.14); padding-top: 20px; font-size: 0.82rem; color: rgba(255,255,255,0.5); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
 
+.social-links { display: flex; gap: 10px; margin-top: 16px; }
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.85);
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+.social-links a:hover { background: rgba(255,255,255,0.12); border-color: var(--green-light); color: var(--white); }
+.social-links.on-light a { border-color: var(--line); color: var(--green-dark); }
+.social-links.on-light a:hover { background: var(--bg-soft); border-color: var(--green-mid); }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
   .nav-inner { flex-wrap: wrap; }
